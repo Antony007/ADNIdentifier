@@ -1,7 +1,7 @@
 # ADNIdentifier
 Chrome extension to generate Unique browser ID.
 
-Usage:
+#Usage:
 Build the extension and install in the browser. Follow the guide here https://developer.chrome.com/extensions/getstarted
 
 Use the following typescript code in your webpage.
