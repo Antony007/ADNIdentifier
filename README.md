@@ -8,12 +8,12 @@ Use the following typescript code in your webpage.
 
 ```sh
 let editorExtensionId = '<your extension id>';
-chrome.runtime.sendMessage(editorExtensionId, {param: 'AnyParam'}, onExtCallBack.bind(this));
+chrome.runtime.sendMessage(editorExtensionId, {param: 'Param2Passtotheextension'}, onExtCallBack.bind(this));
 
 let onExtCallBack = function(response, sender, sendResponse) {
       if (response && response.sysid) 
       {
-      //do something with the response
+            //do something with the response
       }
-    };
+};
 ```
