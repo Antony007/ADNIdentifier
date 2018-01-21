@@ -4,7 +4,7 @@ Chrome extension to generate Unique system ID.
 This extension is meant for web developers to uniquely identifiy their client.
 
 ### Usage:
-- **Recommended** you can download or deploy the already hosted extension from web store [ADNIdentifier](https://chrome.google.com/webstore/detail/identifier/flapebfailmmgbpcpkemjlnfpmjnpmeh)
+- **(Recommended)** You can download or deploy the already hosted extension from web store [ADNIdentifier](https://chrome.google.com/webstore/detail/identifier/flapebfailmmgbpcpkemjlnfpmjnpmeh)
 
 OR
 
