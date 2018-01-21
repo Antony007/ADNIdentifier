@@ -27,3 +27,6 @@ let onExtCallBack = function(response, sender, sendResponse) {
 
 ### Note
 If user reinstalls the extension, the system ID will change.
+
+### Copyleft
+###### Distributed under the GPLv3 license. Copyright (c) 2018, Antony Nadar.
