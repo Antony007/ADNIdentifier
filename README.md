@@ -1,19 +1,29 @@
 # ADNIdentifier
-Chrome extension to generate Unique browser ID.
+Chrome extension to generate Unique system ID.
+
+This extension is meant for web developers to uniquely identifiy their client.
 
 ### Usage:
-Build the extension and install in the browser. Follow the guide here https://developer.chrome.com/extensions/getstarted
+- **Recommended** you can download or deploy the already hosted extension from web store [ADNIdentifier](https://chrome.google.com/webstore/detail/identifier/flapebfailmmgbpcpkemjlnfpmjnpmeh)
 
-Use the following typescript code in your webpage.
+OR
 
-```sh
-let editorExtensionId = '<your extension id>';
-chrome.runtime.sendMessage(editorExtensionId, {param: 'Param2Passtotheextension'}, onExtCallBack.bind(this));
+- Build the extension from source and install in client browser. Follow the guide here for manual installation https://developer.chrome.com/extensions/getstarted
+
+- Assuming you have installed the extension using the above web store link, use the following script to query for the system ID
+
+```javascript
+let editorExtensionId = 'flapebfailmmgbpcpkemjlnfpmjnpmeh'; // If building yourself, use your extension ID provided to you by google webstore
+chrome.runtime.sendMessage(editorExtensionId, {reqid: 'Antony007SecretID'}, onExtCallBack.bind(this));
 
 let onExtCallBack = function(response, sender, sendResponse) {
       if (response && response.sysid) 
       {
-            //do something with the response
+            //response.sysid contains the system ID.
+            //You can make a ajax call here or any other verification to verify if this system ID is allowed to use your application
       }
 };
 ```
+
+### Note
+If user reinstalls the extension, the system ID will change.
